@@ -1,42 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CodeConnect Next
 
-## Getting Started
+Um projeto desenvolvido com **Next.js** para explorar integração de APIs e renderização no lado do servidor (SSR). Este repositório foi criado com o comando `create-next-app`, servindo como base para aplicações modernas com **React** e **Next.js**.
 
-First, run the development server:
+## 🚀 Tecnologias
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- Next.js
+- React
+- JavaScript (ES6+)
+- CSS Modules
+- json-server (para mock de API local)
+
+## 💻 Como executar o projeto
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/mLamonier/codeconnect-next.git
+   cd codeconnect-next
+   ```
+
+2. Instale as dependências:
+   ```bash
+   npm install
+   # ou
+   yarn install
+   ```
+
+3. Execute o servidor de desenvolvimento:
+   ```bash
+   npm run dev
+   # ou
+   yarn dev
+   ```
+
+4. Execute o json-server para servir os dados mockados:
+   ```bash
+   json-server posts.json -p 3042
+   ```
+
+5. Acesse a aplicação em [http://localhost:3000](http://localhost:3000).
+
+## 📁 Estrutura do projeto
+
+```
+codeconnect-next/
+├── app/              # Páginas e componentes de interface
+├── public/           # Arquivos estáticos
+├── posts.json        # Base de dados fake usada pelo json-server
+├── package.json      # Dependências e scripts
+└── README.md         # Documentação do projeto
 ```
 
-Run the json-server:
+## 🧠 Aprendizados
 
-```bash
-json-server posts.json -p 3042
-```
+Este projeto demonstra como:
+- Criar uma aplicação Next.js do zero.
+- Utilizar o `json-server` para APIs locais.
+- Renderizar componentes dinamicamente.
+- Gerenciar rotas e estados em React.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🌐 Deploy
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+O deploy pode ser feito facilmente na **Vercel**, plataforma oficial do Next.js. Basta conectar o repositório e seguir as etapas automáticas de build e deploy.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📄 Licença
 
-## Learn More
+Este projeto é open-source e está sob a licença MIT.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Desenvolvido por [Miguel Lamonier](https://github.com/mLamonier) 💻
